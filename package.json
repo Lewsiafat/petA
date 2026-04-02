@@ -1,0 +1,30 @@
+{
+  "name": "buddy-pet",
+  "version": "0.1.0",
+  "description": "Animated text pet web component for AI agent chat interfaces",
+  "type": "module",
+  "main": "./dist/buddy-pet.umd.cjs",
+  "module": "./dist/buddy-pet.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/buddy-pet.es.js",
+      "require": "./dist/buddy-pet.umd.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
+    "typescript": "~5.7.0",
+    "vite": "^6.2.0",
+    "vue": "^3.5.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "dependencies": {
+    "vue": "^3.5.0"
+  }
+}
